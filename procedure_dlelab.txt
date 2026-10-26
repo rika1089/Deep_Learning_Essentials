@@ -1,0 +1,35 @@
+Go to Command prompt
+
+py -0p
+
+Sample Output:
+
+Installed Pythons found by py Launcher:
+ -3.11-64  C:\Users\Student\AppData\Local\Programs\Python\Python311\python.exe
+ -3.10-64  C:\Users\Student\AppData\Local\Programs\Python\Python310\python.exe
+
+If version 3.11 is not available, download the .exe from 
+https://www.python.org/downloads/release/python-3114/ and install the same
+
+Continue by giving the following command in Command prompt
+
+C:\Users\Admin\> py -3.11 -m venv dlelab
+
+C:\Users\Admin\> .\dlelab\Scripts\activate
+
+(Dlelab) C:\Users\Admin\>cd dlelab
+
+C:\Users\Admin\dlelab>
+
+Go to the dlelab folder---> paste the "requirements.txt" file
+
+Type cd in command prompt to know the file path  
+
+In the command prompt execute
+
+pip install -r requirements.txt    
+(if you encounter any error replace the requirements.txt with the file path)
+
+pip install ipykernel
+
+python -m ipykernel install --user --name dlelab --display-name "DLE (Python 3.11)"

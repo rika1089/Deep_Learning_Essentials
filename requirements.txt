@@ -1,0 +1,52 @@
+# -------------------------------------------------
+# 1. Core scientific stack
+# -------------------------------------------------
+numpy==1.24.4         # <2.0 (required by gensim, tensorflow 2.16.1)
+scipy==1.13.1          # <1.14 (required by gensim)
+pandas==2.3.3
+matplotlib==3.10.7
+seaborn==0.13.2
+scikit-learn==1.7.2
+opencv-python==4.11.0.86  # Downgraded to support numpy 1.x
+Pillow==12.0.0
+tqdm==4.67.1
+
+# -------------------------------------------------
+# 2. ML / DL
+# -------------------------------------------------
+tensorflow==2.16.1     # Matches tensorflow-intel 2.16.1 constraints
+ml-dtypes==0.3.2       # Exact version required by tensorflow 2.16.1
+protobuf<5.0.0,>=4.21.0   # Avoid 4.21.0-5 and 6.x
+tensorboard==2.16.2    # <2.17 (required by tensorflow 2.16.1)
+
+# -------------------------------------------------
+# 3. RL / Gymnasium
+# -------------------------------------------------
+gym==0.26.2
+gymnasium==1.2.1
+pygame==2.6.1
+
+# -------------------------------------------------
+# 4. NLP
+# -------------------------------------------------
+nltk==3.9.2
+gensim==4.3.3
+smart-open>=1.8.1      # required by gensim
+
+# -------------------------------------------------
+# 6. Jupyter / REPL
+# -------------------------------------------------
+ipython==9.6.0
+
+# -------------------------------------------------
+# 7. Extra dependencies required by category-encoders
+# -------------------------------------------------
+patsy>=0.5.1
+statsmodels>=0.9.0
+category-encoders==2.8.0
+
+# -------------------------------------------------
+# 8. Torch (optional – only if you need torchvision)
+# -------------------------------------------------
+torch==2.4.0          # compatible with numpy<2
+torchvision==0.19.0
